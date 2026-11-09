@@ -3,28 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de mi Página</title>
+    <title>Título de mi Página - Estilo Stradivarius</title>
+    <!-- Importamos fuentes elegantes de Google Fonts para emular la estética de la marca -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
     <style>
+        /* Estilos generales inspirados en Inditex/Stradivarius */
         body {
-            background-color: #FF1493; /* Rosa fuerte (Deep Pink) */
-            color: white;              /* Letra blanca */
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            background-color: #ffffff; /* Fondos completamente limpios */
+            color: #020203;           /* El negro característico de la marca */
+            font-family: 'Plus Jakarta Sans', sans-serif; /* Tipografía sans-serif moderna */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
+
+        /* Contenedor principal estructurado como un editorial de moda */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 60px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Título principal con serifa elegante */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Subtítulo o nombre de autor discreto y minimalista */
+        h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 300;
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #767676;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        /* Párrafo limpio con buen interlineado */
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #1d1d1b;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            font-weight: 400;
+        }
+
+        /* Contenedor del video con diseño de catálogo moderno */
         .video-container {
-            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9; /* Mantiene la proporción perfecta del reproductor */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenido a mi sitio web</h1>
-    <h2>María Álvarez Martínez</h2>
-    <p>Este es el contenido visible de la página.</p>
+    <div class="container">
+        <h1>Bienvenido a mi sitio web</h1>
+        <h2>María Álvarez Martínez</h2>
+        <p>Este es el contenido visible de la página, estructurado bajo una línea editorial de cortes limpios, minimalismo estricto y un enfoque tipográfico contemporáneo.</p>
 
-    <!-- Video incrustado de YouTube -->
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Video incrustado adaptado con diseño fluido -->
+        <div class="video-container">
+            <iframe src="https://youtube.com" title="Robyn - Dancing On My Own" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 
 </body>
